@@ -28,8 +28,9 @@ const option = [
 ];
 
 export const Header: React.FC<Props> = ({ score }) => {
+  
   return (
-    <div className="border-2 border-[#D8D8D8] rounded-md py-2 px-4  flex justify-between items-center">
+    <div className="border-2 border-[#D8D8D8] rounded-md py-2 px-4 flex justify-between items-center">
       <div>
         {option?.map((option) => (
           <p

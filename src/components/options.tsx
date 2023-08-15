@@ -2,7 +2,7 @@ import React from "react";
 
 export const Options: React.FC = () => {
   return (
-    <article className="md:w-[400px] lg:w-full max-w-[600px] mx-auto my-6 lg:my-12 flex flex-col gap-6 lg:gap-10">
+    <article className="md:w-[400px] lg:w-full max-w-[600px] mx-auto mt-4 lg:mt-4 flex flex-col gap-6 lg:gap-10">
       <div className="flex items-center justify-center">
         <img
           src="/assets/images/scissors.png"
