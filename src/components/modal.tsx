@@ -19,7 +19,7 @@ export const Modal: React.FC<Props> = ({
     >
       <div className="relative z-50">{children}</div>
       <div
-        className={`absolute top-0 left-0 bottom-0 right-0 z-20 backdrop-blur-sm bg-black/40 ${
+        className={`absolute top-0 left-0 bottom-0 right-0 z-20 backdrop-blur-sm bg-black/50 ${
           dismissible ? "cursor-pointer" : ""
         }`}
       ></div>
