@@ -22,10 +22,13 @@ const App: React.FC = () => {
             handleDismiss={handleToggleRulesModal}
             dismissible
           >
-            <div className="bg-white px-2 lg:px-3 py-4 max-w-[400px] rounded-md shadow-md">
-              <div className="flex justify-between items-center py-2">
-                <h1>RULES</h1>
-                <AiOutlineClose />
+            <div className="bg-white px-3 lg:px-6 py-4 lg:py-8 w-full z-50 fixed right-0 top-0 bottom-0 left-0 md:static lg:h-auto md:w-[400px] md:rounded-md shadow-md">
+              <div className="flex justify-center md:justify-between items-center py-4">
+                <h1 className="text-[#3B4262] font-semibold text-lg md:text-xl">RULES</h1>
+                <AiOutlineClose
+                  className="text-black cursor-pointer active:scale-105 duration-200 absolute bottom-6 left-[50%] translate-x-[50%] lg:static text-xl"
+                  onClick={handleToggleRulesModal}
+                />
               </div>
               <img src="/assets/images/rpsls-game-rules.png" alt="" />
             </div>
