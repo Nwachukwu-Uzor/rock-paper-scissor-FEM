@@ -104,30 +104,30 @@ const App: React.FC = () => {
           {userSelection ? (
             <div className="min-h-[40vh] flex items-center ">
               <div className="flex justify-between items-center w-full">
-                <div className="flex flex-col gap-2 items-center">
+                <div className="flex flex-col-reverse lg:flex-col gap-2 items-center">
                   <p className="font-bold text-lg lg:text-xl text-white uppercase">
                     You Picked
                   </p>
                   <img
                     src={userSelection.imgUrl}
                     alt="User Selection"
-                    className="w-24 lg:w-36 active:opacity-90 active:scale-110 duration-150 hover:scale-[1.05] cursor-pointer relative z-20"
+                    className="w-20 lg:w-36 active:opacity-90 active:scale-110 duration-150 hover:scale-[1.05] cursor-pointer relative z-20"
                   />
                 </div>
                 {userSelection && CPUSelection && winner ? (
-                  <div className="flex flex-col gap-2 justify-center items-center">
-                    <p className="font-bold text-xl lg:text-2xl text-white uppercase">
+                  <div className="flex flex-col gap-2 justify-center items-center lg:static fixed bottom-24 whitespace-nowrap left-[50%] right-[50%] translate-x-[50%]">
+                    <p className="font-bold text-4xl lg:text-2xl text-white uppercase">
                       {message?.[winner]}
                     </p>
                     <button
                       onClick={handlePlayAgainBtnClick}
-                      className="text-[#3B4262] bg-white font-extrabold  px-4 lg:px-8 py-2 rounded-md border-2 border-white hover:opacity-80 active:scale-105 duration-150"
+                      className="text-[#3B4262] bg-white text-sm lg:text-base font-extrabold  px-12 lg:px-8 py-2 rounded-md border-2 border-white hover:opacity-80 active:scale-105 duration-150"
                     >
                       Play Again
                     </button>
                   </div>
                 ) : null}
-                <div className="flex flex-col gap-2 items-center">
+                <div className="flex flex-col-reverse lg:flex-col gap-2 items-center">
                   <p className="font-bold text-lg lg:text-xl text-white uppercase">
                     The house picked
                   </p>
@@ -135,7 +135,7 @@ const App: React.FC = () => {
                     <img
                       src={CPUSelection.imgUrl}
                       alt="User Selection"
-                      className="w-24 lg:w-36 active:opacity-90 active:scale-110 duration-150 hover:scale-[1.05] cursor-pointer relative z-20"
+                      className="w-20 lg:w-36 active:opacity-90 active:scale-110 duration-150 hover:scale-[1.05] cursor-pointer relative z-20"
                     />
                   ) : (
                     <div className="h-16 lg:h-20 w-16 lg:w-20 rounded-full bg-black/10 animate-ping duration-150 mt-auto"></div>
